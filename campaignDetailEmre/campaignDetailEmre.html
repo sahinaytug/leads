@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title = "Campaing Detail Form">
+        <div class="slds-m-around_medium">
+
+    <lightning-record-view-form
+    object-api-name="Campaign"
+    record-id={recordId}>
+            <lightning-output-field field-name="Name"> </lightning-output-field>
+            <lightning-output-field field-name="Target_Donation_Amount__c"> </lightning-output-field>
+            <lightning-output-field field-name="Achieved_Donation_Amount__c"> </lightning-output-field>
+            <lightning-output-field field-name="Remaining_Donation_Amount__c"> </lightning-output-field>
+            <lightning-output-field field-name="EndDate"> </lightning-output-field>
+
+    </lightning-record-view-form>
+</div>
+
+<c-custom-campaign-detail slides-data={dummyData} custom-height="500px"
+   custom-width="100%"
+   auto-scroll
+   hide-navigation-buttons
+   hide-slide-text
+   hide-slide-number></c-custom-campaign-detail>
+    
+</lightning-card>
+</template>
